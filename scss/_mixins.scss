@@ -1,0 +1,19 @@
+@mixin colCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin onMobile {
+  @media screen and (max-width: 1179px) {
+    @content;
+  }
+}
+
+@mixin onDesktop {
+  @media screen and (min-width: 1180px) {
+    @content;
+  }
+}
